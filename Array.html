@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <p id="array"></p>
+    <p id="array2"></p>
+
+    <script>
+        const names=["divya","vamsi","kusuma","chinna"];
+        let size= names.length;
+        document.getElementById("array").innerHTML = size;
+        //array to string
+        document.getElementById("array").innerHTML= names.toString();   //divya vamsi kusuma chinna
+        //array at()
+        let name= names.at(2);
+        document.getElementById("array").innerHTML= name;               //kusuma
+        //array join()
+        document.getElementById("array").innerHTML=  names.join("/");   // divya/vamsi/kusuma/chinna
+        //array pop()
+        document.getElementById("array").innerHTML=  names.pop();       //chinna
+        document.getElementById("array").innerHTML=  names;             //divya vamsi kusuma 
+        //array push()
+        document.getElementById("array").innerHTML=  names;
+        names.push("family");
+        document.getElementById("array").innerHTML=  names;             //divya vamsi kusuma chinna family
+        //array shift()
+        document.getElementById("array").innerHTML=  names.shift();     //divya 
+        document.getElementById("array2").innerHTML=  names;             //vamsi kusuma chinna
+        //array unshift() returns length of new array
+        document.getElementById("array").innerHTML=  names.unshift("amma");
+        document.getElementById("array").innerHTML=  names;
+        
+
+    </script>
+</body>
+</html>
